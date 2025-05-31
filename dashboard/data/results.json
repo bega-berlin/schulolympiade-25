@@ -5,5 +5,26 @@
     "Punkte": 10,
     "Platz": 3,
     "Uhr": "12:46"
+  },
+  {
+    "Team": "Klasse 6.2",
+    "Disziplin": "Sprint",
+    "Punkte": 20,
+    "Platz": 3,
+    "Uhr": "14:42"
+  },
+  {
+    "Team": "Klasse 7.1",
+    "Disziplin": "Sprint",
+    "Punkte": 50,
+    "Platz": 2,
+    "Uhr": "14:45"
+  },
+  {
+    "Team": "Klasse 7.1",
+    "Disziplin": "Test",
+    "Punkte": 10,
+    "Platz": 10,
+    "Uhr": "14:47"
   }
 ]

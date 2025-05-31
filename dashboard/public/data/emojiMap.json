@@ -2,5 +2,9 @@
   {
     "Emoji": "🧮",
     "Trigger": "Mathe"
+  },
+  {
+    "Emoji": "🏃",
+    "Trigger": "Sprint"
   }
 ]

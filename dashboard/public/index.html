@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulolympiade Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-titles">
+                    <h1 class="header-title">
+                        <img src="/assets/logo.png" alt="Schullogo" style="width: 0.9em; vertical-align: middle; margin-right: 0.1em;">
+                        Live Dashboard Schulolympiade 2025
+                    </h1>
+                </div>
+                <div class="last-update" id="lastUpdate">Zuletzt aktualisiert: --:--</div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="stat-card" style="--gradient: var(--gradient-blue);">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-value" id="totalTeams">--</div>
+                    <div class="stat-label">Klassen</div>
+                    <div class="stat-trend trend-up">Aktiv Teilnehmend</div>
+                </div>
+                
+                <div class="stat-card" style="--gradient: var(--gradient-green);">
+                    <div class="stat-icon">🏃</div>
+                    <div class="stat-value" id="totalEvents">--</div>
+                    <div class="stat-label">Wettbewerbe</div>
+                    <div class="stat-trend trend-up">Abgeschlossen</div>
+                </div>
+                
+                <div class="stat-card" style="--gradient: var(--gradient-orange);">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value" id="totalDisciplines">--</div>
+                    <div class="stat-label">Disziplinen</div>
+                    <div class="stat-trend trend-up">Insgesamt</div>
+                </div>
+                
+                <div class="stat-card" style="--gradient: var(--gradient-red);">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-value" id="avgPoints">--</div>
+                    <div class="stat-label">Punkte</div>
+                    <div class="stat-trend trend-up">Durchschnitt nach Klassen</div>
+                </div>
+            </div>
+
+            <!-- Content Layout - 3 Spalten -->
+            <div class="content-layout">
+                <!-- Chart (kleiner) -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h2 class="chart-title">Übersichts Diagramm | Platz 1 - 9</h2>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div class="loading" id="chartLoading">
+                            <div class="spinner"></div>
+                            <div class="loading-text">Lade Daten...</div>
+                        </div>
+                        <div class="bar-chart" id="barChart" style="display: none;"></div>
+                    </div>
+                </div>
+
+                <!-- Leaderboard (kleiner) -->
+                <div class="leaderboard-card">
+                    <h2 class="leaderboard-title">🏆 Rangliste | Top 10</h2>
+                    <div class="leaderboard-list" id="leaderboardContent">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <div class="loading-text">Lade Rangliste...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Results (größer) -->
+                <div class="recent-card">
+                    <h2 class="recent-title">⚡ Aktuelle Ergebnisse</h2>
+                    <div class="recent-list" id="recentResults">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <div class="loading-text">Lade Ergebnisse...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

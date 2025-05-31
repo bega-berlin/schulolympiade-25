@@ -112,13 +112,20 @@ class OlympiadeDashboard {
 
         container.innerHTML = teams.map((team, index) => {
             const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : 'other';
+            // Durchschnittliche Platzierung formatieren (1 Nachkommastelle, falls vorhanden)
+            const avgPlace = team.avgPlace && !isNaN(team.avgPlace)
+                ? Number(team.avgPlace).toFixed(1).replace('.', ',')
+                : '-';
 
             return `
                 <div class="leaderboard-item">
                     <div class="rank ${rankClass}">${team.rank}</div>
                     <div class="team-info">
                         <div class="team-name" title="${team.name}">${team.name}</div>
-                        <div class="team-stats">${team.events} Wettbewerbe</div>
+                        <div class="team-stats">
+                            ${team.events} Wettbewerbe
+                            <span class="avg-place">| ${avgPlace} Ø Platz</span>
+                        </div>
                     </div>
                     <div class="points">${team.totalPoints}</div>
                 </div>

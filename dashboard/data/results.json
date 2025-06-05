@@ -1,30 +1,16 @@
 [
   {
-    "Team": "Klasse 5.2",
+    "Team": "Klasse 8.3",
     "Disziplin": "Mathe",
-    "Punkte": 10,
-    "Platz": 3,
-    "Uhr": "12:46"
-  },
-  {
-    "Team": "Klasse 6.2",
-    "Disziplin": "Sprint",
-    "Punkte": 20,
-    "Platz": 3,
-    "Uhr": "14:42"
-  },
-  {
-    "Team": "Klasse 7.1",
-    "Disziplin": "Sprint",
-    "Punkte": 50,
+    "Punkte": 500,
     "Platz": 2,
-    "Uhr": "14:45"
+    "Uhr": "14:37"
   },
   {
-    "Team": "Klasse 7.1",
-    "Disziplin": "Test",
-    "Punkte": 10,
-    "Platz": 10,
-    "Uhr": "14:47"
+    "Team": "Klasse 7.4",
+    "Disziplin": "Deutsch",
+    "Punkte": 30,
+    "Platz": 2,
+    "Uhr": "15:47"
   }
 ]

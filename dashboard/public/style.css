@@ -539,8 +539,8 @@ body {
     height: 56px;
     border-radius: 14px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;      /* Vertikal zentrieren */
+    justify-content: center;  /* Horizontal zentrieren */
     font-size: 28px;
     margin-right: 16px;
     flex-shrink: 0;

@@ -4,8 +4,8 @@ const path = require('path');
 const crypto = require('crypto');
 const app = express();
 
-const ADMIN_USER = 'BEGA';
-const ADMIN_PASS_HASH = crypto.createHash('sha256').update('Döner#22').digest('hex');
+const ADMIN_USER = 'DauView25';
+const ADMIN_PASS_HASH = crypto.createHash('sha256').update('ongOlympiade#2025').digest('hex');
 const validTokens = new Set();
 
 app.use(express.json());

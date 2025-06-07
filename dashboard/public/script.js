@@ -243,12 +243,12 @@ class OlympiadeDashboard {
         }).join('');
     }
 
-   /* startAutoRefresh() {
+   startAutoRefresh() {
         // Aktualisiere alle 30 Sekunden
         setInterval(() => {
             location.reload();
-        }, 20000); // 20 Sekunden
-    }*/
+        }, 10000); // 10 Sekunden
+    }
 
     showError() {
         const errorMessage = `

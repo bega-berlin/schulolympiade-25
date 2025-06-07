@@ -267,7 +267,8 @@ class OlympiadeDashboard {
 
 // Dashboard initialisieren wenn die Seite geladen ist
 document.addEventListener('DOMContentLoaded', () => {
-    new OlympiadeDashboard();
+    //new OlympiadeDashboard();
+    window.dashboard = new OlympiadeDashboard();
 });
 
 // Reload Funktion

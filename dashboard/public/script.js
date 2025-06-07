@@ -63,11 +63,11 @@ class OlympiadeDashboard {
 
     updateChart() {
         const chartContainer = document.getElementById('barChart');
-        const loading = document.getElementById('chartLoading');
-
-        loading.style.display = 'none';
-        chartContainer.style.display = 'flex'; // Flex statt Grid!
-        chartContainer.style.flexDirection = 'column'; // Vertikal stapeln
+        // Entferne alle Spinner-Referenzen:
+        // const loading = document.getElementById('chartLoading');
+        // if (loading) loading.style.display = 'none';
+        chartContainer.style.display = 'flex';
+        chartContainer.style.flexDirection = 'column';
         chartContainer.innerHTML = '';
 
         // Zeige nur Top 8 Teams

@@ -648,76 +648,28 @@ body {
 .stat-card,
 .chart-card,
 .leaderboard-card,
-.recent-card {
-    animation: fadeIn 0.6s ease-out;
-    animation-fill-mode: both;
-}
-
-.stat-card:nth-child(1) { animation-delay: 0.1s; }
-.stat-card:nth-child(2) { animation-delay: 0.2s; }
-.stat-card:nth-child(3) { animation-delay: 0.3s; }
-.stat-card:nth-child(4) { animation-delay: 0.4s; }
-.chart-card { animation-delay: 0.5s; }
-.leaderboard-card { animation-delay: 0.6s; }
-.recent-card { animation-delay: 0.7s; }
-
-/* Bar Animation */
+.recent-card,
 .bar {
-    animation: slideUp 0.6s ease-out;
-    animation-fill-mode: both;
+    animation: none !important;
 }
 
-.bar-item:nth-child(1) .bar { animation-delay: 0.1s; }
-.bar-item:nth-child(2) .bar { animation-delay: 0.15s; }
-.bar-item:nth-child(3) .bar { animation-delay: 0.2s; }
-.bar-item:nth-child(4) .bar { animation-delay: 0.25s; }
-.bar-item:nth-child(5) .bar { animation-delay: 0.3s; }
-.bar-item:nth-child(6) .bar { animation-delay: 0.35s; }
-.bar-item:nth-child(7) .bar { animation-delay: 0.4s; }
-.bar-item:nth-child(8) .bar { animation-delay: 0.45s; }
-
-/* Zusätzliche Styles für Backend-Kompatibilität */
-#chartLoading {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Error States */
-.error-message {
-    text-align: center;
-    color: var(--red);
-    padding: 40px;
-}
-
-.error-message h3 {
-    font-size: 24px;
-    margin-bottom: 16px;
-}
-
-.error-message p {
-    font-size: 18px;
-    color: var(--text-secondary);
-    margin-bottom: 24px;
-}
-
-.error-message button {
-    padding: 12px 24px;
-    background: var(--blue);
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.error-message button:hover {
-    transform: scale(0.98);
-    background: #0051D5;
+/* Optional: Entferne auch die Animation-Delay, falls sie gesetzt ist */
+.stat-card:nth-child(1),
+.stat-card:nth-child(2),
+.stat-card:nth-child(3),
+.stat-card:nth-child(4),
+.chart-card,
+.leaderboard-card,
+.recent-card,
+.bar-item:nth-child(1) .bar,
+.bar-item:nth-child(2) .bar,
+.bar-item:nth-child(3) .bar,
+.bar-item:nth-child(4) .bar,
+.bar-item:nth-child(5) .bar,
+.bar-item:nth-child(6) .bar,
+.bar-item:nth-child(7) .bar,
+.bar-item:nth-child(8) .bar {
+    animation-delay: 0s !important;
 }
 
 /* Optimierungen für 65" TVs */

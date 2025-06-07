@@ -10,7 +10,7 @@ class OlympiadeDashboard {
         await this.loadEmojiMap();
         await this.loadData();
         this.setupEventListeners();
-        this.startAutoRefresh();
+        //this.startAutoRefresh();
     }
 
     async loadEmojiMap() {

@@ -1,4 +1,4 @@
-Copyright (c) 2025 Valentin Dickert and Julius Paetzke
+Copyright (c) 2025 BEGA Team (Otto-Nagel-Gymnasium)
 
 Diese Software darf ohne ausdrückliche, schriftliche Genehmigung des Autors nicht verwendet, kopiert, verändert, verbreitet oder weitergegeben werden.
 

@@ -22,7 +22,7 @@
     "excel",
     "realtime"
   ],
-  "author": "Valentin Dickert and Julius Paetzke",
+  "author": "BEGA Team (Otto-Nagel-Gymnasium)",
   "license": "SEE LICENSE IN LICENSE.txt",
   "engines": {
     "node": ">=14.0.0"

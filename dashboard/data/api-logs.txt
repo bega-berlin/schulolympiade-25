@@ -1,0 +1,18 @@
+[2025-06-09T16:07:01.048Z] 100.78.124.88 - GET /apple-touch-icon-precomposed.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-09T16:07:01.064Z] 100.78.124.88 - GET /apple-touch-icon.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-09T16:07:01.065Z] 100.78.124.88 - GET /favicon.ico - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-09T16:07:04.889Z] 100.78.124.88 - GET /favicon.ico - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-09T16:07:04.890Z] 100.78.124.88 - GET /apple-touch-icon.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-09T16:07:04.890Z] 100.78.124.88 - GET /apple-touch-icon-precomposed.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-09T16:07:05.169Z] 100.78.124.88 - GET /apple-touch-icon-precomposed.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-09T16:07:05.244Z] 100.78.124.88 - GET /apple-touch-icon.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-09T16:07:05.631Z] 100.78.124.88 - GET /apple-touch-icon-precomposed.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-09T16:07:05.714Z] 100.78.124.88 - GET /apple-touch-icon.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-09T16:07:11.192Z] 100.78.124.88 - GET /apple-touch-icon-precomposed.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-09T16:07:11.279Z] 100.78.124.88 - GET /apple-touch-icon.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-10T11:14:36.683Z] 100.78.124.88 - GET /apple-touch-icon-precomposed.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-10T11:14:36.720Z] 100.78.124.88 - GET /apple-touch-icon.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-10T11:14:36.722Z] 100.78.124.88 - GET /favicon.ico - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-10T11:14:39.413Z] 100.78.124.88 - GET /favicon.ico - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-10T11:14:39.414Z] 100.78.124.88 - GET /apple-touch-icon.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-06-10T11:14:39.416Z] 100.78.124.88 - GET /apple-touch-icon-precomposed.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5

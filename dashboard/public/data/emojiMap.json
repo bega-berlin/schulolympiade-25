@@ -1,2 +1,18 @@
 [
+  {
+    "Emoji": "🧮",
+    "Trigger": "Mathe"
+  },
+  {
+    "Emoji": "🏃‍♂️",
+    "Trigger": "Sport"
+  },
+  {
+    "Emoji": "🎨",
+    "Trigger": "Kunst"
+  },
+  {
+    "Emoji": "🎵",
+    "Trigger": "Musik"
+  }
 ]

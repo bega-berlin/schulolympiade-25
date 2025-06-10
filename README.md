@@ -7,8 +7,6 @@ Dieses Projekt bietet eine moderne, TV-optimierte Übersicht aller Ergebnisse, R
 
 ## 🎬 Titel-Video
 
-> _Apple-inspirierte Präsentation aller Funktionen_
-
 https://github.com/user-attachments/assets/ba063d60-0c84-469e-b994-72d3def3de98
 
 ---

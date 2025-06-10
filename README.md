@@ -9,7 +9,7 @@ Dieses Projekt bietet eine moderne, TV-optimierte Übersicht aller Ergebnisse, R
 
 > _Apple-inspirierte Präsentation aller Funktionen_
 
-<video src="README Files/Video-Final.mov" controls style="width:100%; max-width:900px; border-radius:16px; box-shadow:0 4px 32px #0002;"></video>
+https://github.com/user-attachments/assets/ba063d60-0c84-469e-b994-72d3def3de98
 
 ---
 

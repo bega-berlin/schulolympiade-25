@@ -78,7 +78,7 @@ n8n/                      # n8n Automatisierung (optional)
 
 ## 🛠️ Entwicklung
 
-- **Frontend:** HTML, CSS (Apple-inspiriert), Vanilla JS
+- **Frontend:** HTML, CSS, Vanilla JS
 - **Backend:** Node.js (Express), Chokidar (Live-Reload)
 - **Daten:** JSON-Dateien ([`dashboard/data/results.json`](dashboard/data/results.json ), [`dashboard/public/data/emojiMap.json`](dashboard/public/data/emojiMap.json ))
 - **Docker/NGINX:** Für Weiterleitungen & Reverse Proxy

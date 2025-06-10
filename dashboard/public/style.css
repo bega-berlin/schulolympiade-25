@@ -1,4 +1,4 @@
-/* Apple Human Interface Guidelines Compliant CSS */
+/* Apple-Style Dashboard - Beautiful & HIG Compliant */
 * {
     margin: 0;
     padding: 0;
@@ -6,34 +6,25 @@
 }
 
 :root {
-    /* Apple System Colors - HIG Compliant */
+    /* Apple System Colors - Dark Mode */
     --system-background: #000000;
     --system-grouped-background: #1c1c1e;
     --system-secondary-grouped-background: #2c2c2e;
-    --system-tertiary-grouped-background: #3a3a3c;
     
-    /* System Fill Colors */
-    --system-fill: rgba(120, 120, 128, 0.20);
-    --system-secondary-fill: rgba(120, 120, 128, 0.16);
-    --system-tertiary-fill: rgba(120, 120, 128, 0.12);
-    --system-quaternary-fill: rgba(120, 120, 128, 0.08);
+    /* Apple Glass/Material Effects */
+    --glass-background: rgba(28, 28, 30, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --card-background: rgba(44, 44, 46, 0.95);
+    --card-hover: rgba(58, 58, 60, 0.8);
     
-    /* System Text Colors */
-    --label: #ffffff;
-    --secondary-label: rgba(235, 235, 245, 0.60);
-    --tertiary-label: rgba(235, 235, 245, 0.30);
-    --quaternary-label: rgba(235, 235, 245, 0.18);
+    /* Apple Text Colors */
+    --primary-text: #ffffff;
+    --secondary-text: rgba(235, 235, 245, 0.6);
+    --tertiary-text: rgba(235, 235, 245, 0.3);
     
-    /* System Separator Colors */
-    --separator: rgba(84, 84, 88, 0.60);
-    --opaque-separator: #38383a;
-    
-    /* Apple System Blue Family */
+    /* Apple System Colors - Vibrant */
     --system-blue: #007AFF;
-    --system-blue-light: #409CFF;
-    --system-blue-dark: #0051D5;
-    
-    /* Apple System Colors */
+    --system-blue-light: #40A9FF;
     --system-green: #34C759;
     --system-orange: #FF9500;
     --system-red: #FF3B30;
@@ -42,114 +33,137 @@
     --system-yellow: #FFCC00;
     --system-teal: #64D2FF;
     
-    /* Material & Vibrancy */
-    --material-regular: rgba(28, 28, 30, 0.80);
-    --material-thick: rgba(28, 28, 30, 0.90);
-    --material-thin: rgba(28, 28, 30, 0.50);
+    /* Apple Gradients */
+    --gradient-blue: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+    --gradient-green: linear-gradient(135deg, #34C759 0%, #248A3D 100%);
+    --gradient-orange: linear-gradient(135deg, #FF9500 0%, #FF8800 100%);
+    --gradient-red: linear-gradient(135deg, #FF3B30 0%, #D70015 100%);
+    --gradient-purple: linear-gradient(135deg, #AF52DE 0%, #8E44AD 100%);
+    --gradient-pink: linear-gradient(135deg, #FF2D92 0%, #E91E63 100%);
+    --gradient-teal: linear-gradient(135deg, #64D2FF 0%, #5AC8FA 100%);
+    --gradient-yellow: linear-gradient(135deg, #FFCC00 0%, #FFA000 100%);
     
-    /* Apple SF Font Sizes - HIG Typography Scale */
-    --large-title: 34px;
-    --title-1: 28px;
-    --title-2: 22px;
-    --title-3: 20px;
-    --headline: 17px;
-    --body: 17px;
-    --callout: 16px;
-    --subhead: 15px;
-    --footnote: 13px;
-    --caption-1: 12px;
-    --caption-2: 11px;
+    /* Apple Shadows */
+    --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.12);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.16);
+    --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.24);
+    --shadow-glow: 0 0 20px rgba(0, 122, 255, 0.25);
     
-    /* Apple Standard Spacing - HIG Layout */
-    --spacing-4: 4px;
-    --spacing-8: 8px;
-    --spacing-12: 12px;
-    --spacing-16: 16px;
-    --spacing-20: 20px;
-    --spacing-24: 24px;
-    --spacing-32: 32px;
-    --spacing-44: 44px;
-    
-    /* Corner Radius - HIG Standards */
-    --corner-radius-small: 8px;
-    --corner-radius-medium: 12px;
-    --corner-radius-large: 16px;
-    --corner-radius-extra-large: 20px;
+    /* Apple Typography */
+    --font-large-title: 34px;
+    --font-title-1: 28px;
+    --font-title-2: 22px;
+    --font-title-3: 20px;
+    --font-headline: 17px;
+    --font-body: 17px;
+    --font-callout: 16px;
+    --font-subhead: 15px;
+    --font-footnote: 13px;
+    --font-caption: 12px;
 }
 
-/* SF Pro Font Stack - HIG Compliant */
+/* Apple SF Font */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
-    background-color: var(--system-background);
-    color: var(--label);
-    font-size: var(--body);
-    line-height: 1.41176; /* HIG Line Height Ratio */
+    background: var(--system-background);
+    color: var(--primary-text);
+    font-size: var(--font-body);
+    line-height: 1.41176;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
     overflow: hidden;
     height: 100vh;
 }
 
-/* Container Layout - HIG Layout Principles */
+/* Apple-Style Container */
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: var(--system-background);
+    background: var(--system-background);
 }
 
-/* Sidebar - HIG Navigation Patterns */
+/* Apple Sidebar with Glass Effect */
 .sidebar {
     width: 320px;
-    background-color: var(--system-grouped-background);
-    border-right: 1px solid var(--separator);
-    padding: var(--spacing-24);
+    background: var(--glass-background);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-right: 1px solid var(--glass-border);
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
-    /* Material Design Effect per HIG */
-    backdrop-filter: saturate(180%) blur(20px);
+    position: relative;
 }
 
-/* Logo Section - HIG App Icon Guidelines */
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, 
+        rgba(255, 255, 255, 0.02) 0%, 
+        rgba(255, 255, 255, 0.005) 100%);
+    pointer-events: none;
+}
+
+/* Apple Logo Design */
 .logo-container {
-    margin-bottom: var(--spacing-32);
+    margin-bottom: 40px;
 }
 
 .logo-wrapper {
     display: flex;
     align-items: center;
-    gap: var(--spacing-16);
-    margin-bottom: var(--spacing-8);
+    gap: 16px;
+    margin-bottom: 8px;
 }
 
 .logo-icon {
     width: 58px;
     height: 58px;
-    background: linear-gradient(135deg, var(--system-blue), var(--system-blue-dark));
-    border-radius: var(--corner-radius-large);
+    background: var(--gradient-blue);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    /* HIG Shadow Style */
-    box-shadow: 0 4px 16px rgba(0, 122, 255, 0.24);
+    box-shadow: var(--shadow-glow);
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.3) 0%, 
+        rgba(255, 255, 255, 0) 50%);
+    border-radius: 16px;
 }
 
 .logo-title {
-    font-size: var(--title-1);
+    font-size: var(--font-title-1);
     font-weight: 700;
-    letter-spacing: -0.41px; /* HIG Letter Spacing */
-    color: var(--label);
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--primary-text), var(--secondary-text));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo-credit {
-    font-size: var(--caption-1);
-    color: var(--tertiary-label);
-    margin-left: 74px; /* Aligned with title */
+    font-size: var(--font-caption);
+    color: var(--tertiary-text);
+    margin-left: 74px;
 }
 
-/* Navigation - HIG Navigation Components */
+/* Apple Navigation */
 .nav {
     flex: 1;
 }
@@ -157,76 +171,114 @@ body {
 .nav-item {
     display: flex;
     align-items: center;
-    gap: var(--spacing-12);
-    padding: var(--spacing-12) var(--spacing-16);
-    margin-bottom: var(--spacing-4);
-    border-radius: var(--corner-radius-medium);
-    color: var(--secondary-label);
+    gap: 12px;
+    padding: 14px 16px;
+    margin-bottom: 4px;
+    border-radius: 12px;
+    color: var(--secondary-text);
     text-decoration: none;
-    font-size: var(--body);
-    font-weight: 400;
-    transition: all 0.25s ease; /* HIG Animation Duration */
+    font-size: var(--font-body);
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
-    min-height: 44px; /* HIG Minimum Touch Target */
+    position: relative;
+    min-height: 44px;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item:hover::before {
+    opacity: 1;
 }
 
 .nav-item:hover {
-    background-color: var(--system-fill);
-    color: var(--label);
+    color: var(--primary-text);
+    transform: translateX(2px);
 }
 
 .nav-item.active {
-    background-color: var(--system-blue);
+    background: var(--gradient-blue);
     color: white;
+    box-shadow: var(--shadow-glow);
+}
+
+.nav-item.active::before {
+    opacity: 0;
 }
 
 .nav-icon {
-    font-size: 22px;
-    width: 22px;
+    font-size: 20px;
+    width: 20px;
     text-align: center;
 }
 
-/* Refresh Button - HIG Button Guidelines */
+/* Apple Button */
 .refresh-btn {
     width: 100%;
-    min-height: 44px; /* HIG Minimum Touch Target */
-    padding: var(--spacing-12) var(--spacing-20);
-    background: linear-gradient(135deg, var(--system-blue), var(--system-blue-dark));
+    min-height: 44px;
+    padding: 14px 20px;
+    background: var(--gradient-blue);
     border: none;
-    border-radius: var(--corner-radius-medium);
+    border-radius: 12px;
     color: white;
-    font-size: var(--body);
+    font-size: var(--font-body);
     font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-8);
-    transition: all 0.25s ease;
-    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.16);
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: var(--shadow-glow);
+    position: relative;
+    overflow: hidden;
+}
+
+.refresh-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(255, 255, 255, 0) 50%);
+    border-radius: 12px;
 }
 
 .refresh-btn:hover {
-    transform: scale(0.98);
-    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.24);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 122, 255, 0.4);
 }
 
 .refresh-btn:active {
-    transform: scale(0.96);
+    transform: translateY(0);
 }
 
-/* Main Content Area - HIG Layout */
+/* Main Content */
 .main {
     flex: 1;
-    padding: var(--spacing-32) var(--spacing-44);
+    padding: 40px 48px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-24);
-    background-color: var(--system-background);
+    gap: 28px;
+    background: var(--system-background);
 }
 
-/* Header Section - HIG Typography Hierarchy */
+/* Apple Header */
 .header {
     display: flex;
     align-items: flex-end;
@@ -234,166 +286,183 @@ body {
     flex-shrink: 0;
 }
 
-.header-titles {
-    display: flex;
-    flex-direction: column;
-}
-
 .header-title {
-    font-size: var(--large-title);
-    margin-bottom: var(--spacing-4);
+    font-size: var(--font-large-title);
     font-weight: 700;
-    letter-spacing: -0.41px;
-    color: var(--label);
-    line-height: 1.20588; /* HIG Large Title Line Height */
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, 
+        var(--primary-text) 0%, 
+        var(--secondary-text) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4px;
 }
 
 .header-subtitle {
-    color: var(--secondary-label);
-    font-size: var(--subhead);
-    font-weight: 400;
+    color: var(--secondary-text);
+    font-size: var(--font-subhead);
     margin: 0;
 }
 
 .last-update {
-    font-size: var(--footnote);
-    color: var(--tertiary-label);
-    background-color: var(--system-tertiary-fill);
-    padding: var(--spacing-8) var(--spacing-16);
-    border-radius: 100px;
-    align-self: flex-start;
+    font-size: var(--font-footnote);
+    color: var(--tertiary-text);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Stats Cards - HIG Card Design */
+/* Apple Stats Cards */
 .stats-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-16);
+    gap: 20px;
     flex-shrink: 0;
 }
 
 .stat-card {
-    background-color: var(--system-secondary-grouped-background);
-    border-radius: var(--corner-radius-extra-large);
-    padding: var(--spacing-24);
+    background: var(--card-background);
+    backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 24px;
     position: relative;
-    transition: all 0.25s ease;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
-    border: 1px solid var(--separator);
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.05) 0%, 
+        rgba(255, 255, 255, 0.02) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .stat-card:hover {
-    transform: translateY(-2px);
-    background-color: var(--system-tertiary-grouped-background);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px) scale(1.02);
+    background: var(--card-hover);
+    box-shadow: var(--shadow-large);
+}
+
+.stat-card:hover::before {
+    opacity: 1;
 }
 
 .stat-icon {
-    width: 44px;
-    height: 44px;
-    background: linear-gradient(135deg, var(--gradient-color), var(--gradient-color-dark));
-    border-radius: var(--corner-radius-medium);
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-color);
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    margin-bottom: var(--spacing-16);
+    font-size: 26px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-medium);
 }
 
 .stat-value {
-    font-size: var(--large-title);
+    font-size: 38px;
     font-weight: 700;
-    margin-bottom: var(--spacing-4);
-    letter-spacing: -0.41px;
-    color: var(--label);
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+    color: var(--primary-text);
 }
 
 .stat-label {
-    font-size: var(--footnote);
-    color: var(--secondary-label);
-    font-weight: 400;
+    font-size: var(--font-footnote);
+    color: var(--secondary-text);
+    font-weight: 500;
 }
 
 .stat-trend {
     position: absolute;
-    top: var(--spacing-24);
-    right: var(--spacing-24);
-    font-size: var(--caption-1);
+    top: 24px;
+    right: 24px;
+    font-size: var(--font-caption);
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: var(--spacing-4);
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
 }
 
 .trend-up {
     color: var(--system-green);
+    background: rgba(52, 199, 89, 0.1);
 }
 
 .trend-down {
     color: var(--system-red);
+    background: rgba(255, 59, 48, 0.1);
 }
 
-/* Content Layout Grid - HIG Layout Principles */
+/* Content Layout */
 .content-layout {
     flex: 1;
     display: grid;
     grid-template-columns: 1.2fr 1fr 1.5fr;
-    gap: var(--spacing-24);
+    gap: 24px;
     min-height: 0;
 }
 
-/* Chart Card - HIG Data Visualization */
-.chart-card {
-    background-color: var(--system-secondary-grouped-background);
-    border-radius: var(--corner-radius-extra-large);
-    padding: var(--spacing-24);
+/* Apple Glass Cards */
+.chart-card,
+.leaderboard-card,
+.recent-card {
+    background: var(--card-background);
+    backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--separator);
+    position: relative;
+    overflow: hidden;
 }
 
-.chart-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-20);
+.chart-card::before,
+.leaderboard-card::before,
+.recent-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.03) 0%, 
+        rgba(255, 255, 255, 0.01) 100%);
+    pointer-events: none;
 }
 
-.chart-title {
-    font-size: var(--title-3);
+.chart-title,
+.leaderboard-title,
+.recent-title {
+    font-size: var(--font-title-3);
     font-weight: 600;
-    color: var(--label);
+    margin-bottom: 20px;
+    color: var(--primary-text);
 }
 
-.chart-select {
-    background-color: var(--system-tertiary-fill);
-    border: 1px solid var(--separator);
-    color: var(--label);
-    padding: var(--spacing-8) var(--spacing-12);
-    border-radius: var(--corner-radius-small);
-    font-size: var(--caption-1);
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    min-height: 32px;
-}
-
-.chart-select:hover {
-    background-color: var(--system-quaternary-fill);
-    border-color: var(--system-blue);
-}
-
-/* Bar Chart - HIG Data Visualization Guidelines */
-.chart-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
+/* Apple Bar Chart */
 .bar-chart {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12);
+    gap: 14px;
 }
 
 .bar-item {
@@ -404,253 +473,195 @@ body {
 
 .bar-label {
     min-width: 100px;
-    margin-right: var(--spacing-12);
-    color: var(--label);
-    font-size: var(--subhead);
-    font-weight: 400;
+    margin-right: 12px;
+    color: var(--primary-text);
+    font-size: var(--font-subhead);
+    font-weight: 500;
 }
 
 .bar {
-    height: 28px;
-    border-radius: var(--corner-radius-small);
-    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* HIG Easing */
-    margin-right: var(--spacing-12);
+    height: 32px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    margin-right: 12px;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-small);
+}
+
+.bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(255, 255, 255, 0) 50%);
+    border-radius: 10px;
 }
 
 .bar:hover {
-    filter: brightness(1.1);
+    transform: scaleX(1.05);
+    box-shadow: var(--shadow-medium);
 }
 
 .bar-value {
-    min-width: 32px;
-    color: var(--label);
+    min-width: 36px;
+    color: var(--primary-text);
     font-weight: 600;
     text-align: right;
-    font-size: var(--footnote);
+    font-size: var(--font-footnote);
 }
 
-/* System Color Assignment for Bars */
-.bar-item:nth-child(1) .bar { background: linear-gradient(135deg, var(--system-blue), var(--system-blue-dark)); }
-.bar-item:nth-child(2) .bar { background: linear-gradient(135deg, var(--system-green), #1E8E3E); }
-.bar-item:nth-child(3) .bar { background: linear-gradient(135deg, var(--system-orange), #D67E00); }
-.bar-item:nth-child(4) .bar { background: linear-gradient(135deg, var(--system-red), #D72C25); }
-.bar-item:nth-child(5) .bar { background: linear-gradient(135deg, var(--system-purple), #954CD6); }
-.bar-item:nth-child(6) .bar { background: linear-gradient(135deg, var(--system-pink), #E6246E); }
-.bar-item:nth-child(7) .bar { background: linear-gradient(135deg, var(--system-teal), #4FB3D9); }
-.bar-item:nth-child(8) .bar { background: linear-gradient(135deg, var(--system-yellow), #E6B800); }
+/* Colorful Bars */
+.bar-item:nth-child(1) .bar { background: var(--gradient-blue); }
+.bar-item:nth-child(2) .bar { background: var(--gradient-green); }
+.bar-item:nth-child(3) .bar { background: var(--gradient-orange); }
+.bar-item:nth-child(4) .bar { background: var(--gradient-red); }
+.bar-item:nth-child(5) .bar { background: var(--gradient-purple); }
+.bar-item:nth-child(6) .bar { background: var(--gradient-pink); }
+.bar-item:nth-child(7) .bar { background: var(--gradient-teal); }
+.bar-item:nth-child(8) .bar { background: var(--gradient-yellow); }
 
-/* Leaderboard - HIG List Design */
-.leaderboard-card {
-    background-color: var(--system-secondary-grouped-background);
-    border-radius: var(--corner-radius-extra-large);
-    padding: var(--spacing-24);
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--separator);
-}
-
-.leaderboard-title {
-    font-size: var(--title-3);
-    font-weight: 600;
-    margin-bottom: var(--spacing-20);
-    color: var(--label);
-}
-
-.leaderboard-list {
-    flex: 1;
-    overflow: hidden;
-}
-
-#leaderboardContent {
-    height: 100%;
-}
-
-.leaderboard-item {
+/* Apple List Items */
+.leaderboard-item,
+.recent-item {
     display: flex;
     align-items: center;
-    padding: var(--spacing-12);
-    margin-bottom: var(--spacing-4);
-    border-radius: var(--corner-radius-medium);
-    transition: all 0.25s ease;
+    padding: 12px;
+    margin-bottom: 6px;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
-    min-height: 44px; /* HIG Touch Target */
+    min-height: 44px;
+    position: relative;
 }
 
-.leaderboard-item:hover {
-    background-color: var(--system-fill);
+.leaderboard-item::before,
+.recent-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
+.leaderboard-item:hover::before,
+.recent-item:hover::before {
+    opacity: 1;
+}
+
+.leaderboard-item:hover,
+.recent-item:hover {
+    transform: translateX(4px);
+}
+
+/* Apple Ranks */
 .rank {
-    width: 28px;
-    height: 28px;
-    border-radius: var(--corner-radius-small);
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    font-size: var(--caption-1);
-    margin-right: var(--spacing-12);
+    font-size: var(--font-caption);
+    margin-right: 12px;
     flex-shrink: 0;
+    box-shadow: var(--shadow-small);
 }
 
-.rank.gold {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    color: #000000;
-}
-
-.rank.silver {
-    background: linear-gradient(135deg, #C0C0C0, #808080);
-    color: #000000;
-}
-
-.rank.bronze {
-    background: linear-gradient(135deg, #CD7F32, #8B4513);
-    color: #ffffff;
-}
-
-.rank.other {
-    background-color: var(--system-fill);
-    color: var(--secondary-label);
-}
-
-.team-info {
-    flex: 1;
-    min-width: 0;
-}
+.rank.gold { background: linear-gradient(135deg, #FFD700, #FFA500); color: #000; }
+.rank.silver { background: linear-gradient(135deg, #C0C0C0, #808080); color: #000; }
+.rank.bronze { background: linear-gradient(135deg, #CD7F32, #8B4513); color: #fff; }
+.rank.other { background: rgba(255, 255, 255, 0.1); color: var(--secondary-text); }
 
 .team-name {
-    font-size: var(--subhead);
+    font-size: var(--font-subhead);
     font-weight: 500;
-    margin-bottom: var(--spacing-4);
-    color: var(--label);
+    margin-bottom: 2px;
+    color: var(--primary-text);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .team-stats {
-    font-size: var(--caption-1);
-    color: var(--secondary-label);
+    font-size: var(--font-caption);
+    color: var(--secondary-text);
 }
 
 .points {
-    font-size: var(--headline);
+    font-size: var(--font-headline);
     font-weight: 600;
     color: var(--system-blue);
-    margin-left: var(--spacing-8);
+    margin-left: 8px;
 }
 
-/* Recent Results - HIG List & Card Design */
-.recent-card {
-    background-color: var(--system-secondary-grouped-background);
-    border-radius: var(--corner-radius-extra-large);
-    padding: var(--spacing-24);
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--separator);
-}
-
-.recent-title {
-    font-size: var(--title-3);
-    font-weight: 600;
-    margin-bottom: var(--spacing-20);
-    color: var(--label);
-}
-
-.recent-list {
-    flex: 1;
-    overflow: hidden;
-}
-
-#recentResults {
-    height: 100%;
-}
-
-.recent-item {
-    display: flex;
-    align-items: center;
-    padding: var(--spacing-12);
-    margin-bottom: var(--spacing-8);
-    background-color: var(--system-tertiary-fill);
-    border-radius: var(--corner-radius-medium);
-    transition: all 0.25s ease;
-    min-height: 44px;
-}
-
-.recent-item:hover {
-    background-color: var(--system-fill);
-}
-
+/* Discipline Icons */
 .discipline-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: var(--corner-radius-medium);
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    margin-right: var(--spacing-16);
+    margin-right: 16px;
     flex-shrink: 0;
+    box-shadow: var(--shadow-small);
 }
 
-.discipline-1 { background: linear-gradient(135deg, var(--system-blue), var(--system-blue-dark)); }
-.discipline-2 { background: linear-gradient(135deg, var(--system-green), #1E8E3E); }
-.discipline-3 { background: linear-gradient(135deg, var(--system-orange), #D67E00); }
-.discipline-4 { background: linear-gradient(135deg, var(--system-red), #D72C25); }
-
-.recent-info {
-    flex: 1;
-    min-width: 0;
-}
+.discipline-1 { background: var(--gradient-blue); }
+.discipline-2 { background: var(--gradient-green); }
+.discipline-3 { background: var(--gradient-orange); }
+.discipline-4 { background: var(--gradient-red); }
 
 .recent-details h4 {
-    font-size: var(--subhead);
+    font-size: var(--font-subhead);
     font-weight: 500;
-    margin-bottom: var(--spacing-4);
-    color: var(--label);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    margin-bottom: 4px;
+    color: var(--primary-text);
 }
 
 .recent-details p {
-    font-size: var(--caption-1);
-    color: var(--secondary-label);
-}
-
-.recent-score {
-    text-align: right;
-    flex-shrink: 0;
+    font-size: var(--font-caption);
+    color: var(--secondary-text);
 }
 
 .score-value {
-    font-size: var(--title-3);
+    font-size: var(--font-title-3);
     font-weight: 600;
     color: var(--system-blue);
-    margin-bottom: var(--spacing-4);
+    margin-bottom: 4px;
 }
 
 .score-date {
-    font-size: var(--caption-2);
-    color: var(--tertiary-label);
+    font-size: var(--font-caption);
+    color: var(--tertiary-text);
 }
 
-/* Loading States - HIG Progress Indicators */
+/* Apple Loading */
 .loading {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: var(--spacing-16);
+    gap: 16px;
 }
 
 .spinner {
-    width: 36px;
-    height: 36px;
-    border: 2px solid var(--separator);
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-top-color: var(--system-blue);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
@@ -660,89 +671,29 @@ body {
     to { transform: rotate(360deg); }
 }
 
-.loading-text {
-    font-size: var(--body);
-    color: var(--secondary-label);
-}
+/* Stat Colors */
+#totalTeams { color: var(--system-blue); font-weight: 700; }
+#totalEvents { color: var(--system-green); font-weight: 700; }
+#avgPoints { color: var(--system-red); font-weight: 700; }
+#totalDisciplines { color: var(--system-orange); font-weight: 700; }
 
-/* HIG Animation Standards */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(8px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Specific Color Assignments for Stats */
-#totalTeams {
-    color: var(--system-blue);
-    font-weight: 700;
-}
-
-#totalEvents {
-    color: var(--system-green);
-    font-weight: 700;
-}
-
-#avgPoints {
-    color: var(--system-red);
-    font-weight: 700;
-}
-
-#totalDisciplines {
-    color: var(--system-orange);
-    font-weight: 700;
-}
-
-/* HIG Responsive Design - Large Displays */
+/* Apple Responsive */
 @media (min-width: 3840px) {
-    :root {
-        --large-title: 48px;
-        --title-1: 36px;
-        --title-2: 28px;
-        --title-3: 24px;
-        --body: 19px;
-        --subhead: 17px;
-        --footnote: 15px;
-    }
-    
-    .sidebar {
-        width: 380px;
-        padding: var(--spacing-32) var(--spacing-44);
-    }
-    
-    .main {
-        padding: var(--spacing-44) var(--spacing-44) * 2;
-    }
+    .sidebar { width: 380px; padding: 40px 32px; }
+    .main { padding: 48px 64px; }
+    .header-title { font-size: 48px; }
+    .stat-value { font-size: 48px; }
 }
 
-/* HIG Accessibility - Reduced Motion */
+/* Apple Accessibility */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
 }
 
-/* HIG Dark Mode Optimization */
-@media (prefers-color-scheme: dark) {
-    /* Additional dark mode refinements if needed */
-}
-
-/* Remove non-HIG compliant animations */
-.stat-card,
-.chart-card,
-.leaderboard-card,
-.recent-card {
-    animation: none !important;
-}
-
-/* Ensure proper overflow handling per HIG */
+/* Overflow Control */
 body, html {
     overflow: hidden;
     height: 100vh;

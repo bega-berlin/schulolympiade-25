@@ -5,6 +5,14 @@ Dieses Projekt bietet eine moderne, TV-optimierte Übersicht aller Ergebnisse, R
 
 ---
 
+## 🎬 Titel-Video
+
+> _Apple-inspirierte Präsentation aller Funktionen_
+
+<video src="README Files/Timeline 1.mov" controls style="width:100%; max-width:900px; border-radius:16px; box-shadow:0 4px 32px #0002;"></video>
+
+---
+
 ## ✨ Features
 
 - **Live-Ansicht** der Ergebnisse & Ranglisten  
@@ -14,15 +22,6 @@ Dieses Projekt bietet eine moderne, TV-optimierte Übersicht aller Ergebnisse, R
 - **Emoji-Mapping** Verwaltung für Disziplinen
 - **Docker & NGINX**-Support für einfache Bereitstellung
 - **Dark Mode** & modernes Apple-inspiriertes Design 🌙
-
----
-
-## 📸 Vorschau
-
-> _Hinweis: Beispielbilder sind generiert und zeigen keine echten Daten._
-
-![Dashboard Vorschau](https://raw.githubusercontent.com/github/explore/main/topics/dashboard/dashboard.png)
-![Admin Panel Vorschau](https://raw.githubusercontent.com/github/explore/main/topics/admin/admin.png)
 
 ---
 
@@ -75,7 +74,7 @@ n8n/                      # n8n Automatisierung (optional)
 ## 🔒 Admin-
 
 - **Benutzername:** `DauView25`
-- **Passwort:** (Siehe .env oder Quelltext, aus Sicherheitsgründen hier nicht gelistet)
+- **Passwort:** (Siehe Quelltext, aus Sicherheitsgründen hier nicht gelistet)
 
 ---
 
@@ -115,15 +114,6 @@ n8n/                      # n8n Automatisierung (optional)
 
 ---
 
-## 🖼️ Beispiel-UI (Mockup)
-
-> _Die echten Screenshots werden beim ersten Start generiert!_
-
-![Mockup Dashboard](https://placehold.co/900x400/222/fff?text=Dashboard+Mockup)
-![Mockup Admin](https://placehold.co/900x400/222/fff?text=Admin+Panel+Mockup)
-
----
-
 ## 👨‍💻 Lizenz
 
 ```
@@ -136,9 +126,4 @@ Diese Software darf ohne ausdrückliche, schriftliche Genehmigung des Autors nic
 ## 💬 Kontakt & Mitmachen
 
 Fragen, Feedback oder Ideen?  
-Melde dich beim BEGA Team am Otto-Nagel-Gymnasium!  
-Oder öffne ein Issue/PR auf GitHub.
-
----
-
-**Viel Spaß bei der Schulolympiade!** 🎉
+-> Öffne ein Issue.

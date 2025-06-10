@@ -1,23 +1,2 @@
 [
-  {
-    "Team": "Klasse 6.1",
-    "Disziplin": "test",
-    "Punkte": 20,
-    "Platz": 2,
-    "Uhr": "18:34"
-  },
-  {
-    "Team": "Klasse 7.1",
-    "Disziplin": "Test",
-    "Punkte": 32,
-    "Platz": 4,
-    "Uhr": "18:34"
-  },
-  {
-    "Team": "Klasse 7.2",
-    "Disziplin": "Test",
-    "Punkte": 32,
-    "Platz": 5,
-    "Uhr": "18:34"
-  }
 ]

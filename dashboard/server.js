@@ -152,11 +152,14 @@ function processOlympiadeData(rawData) {
 
     // Neueste Ergebnisse (nach Zeit sortieren, wenn vorhanden)
     processed.recentResults = processed.recentResults
-        .filter(r => r.time && /^\d{1,2}:\d{2}/.test(r.time))
+        .filter(r => r.time && /^\d{1,2}:\d{2}(:\d{2})?$/.test(r.time))
         .sort((a, b) => {
-            const [ah, am] = a.time.split(':').map(Number);
-            const [bh, bm] = b.time.split(':').map(Number);
-            const timeDiff = (bh * 60 + bm) - (ah * 60 + am);
+            // Unterstützt hh:mm oder hh:mm:ss
+            const [ah, am, as] = a.time.split(':').map(Number);
+            const [bh, bm, bs] = b.time.split(':').map(Number);
+            const aSecs = (ah * 3600) + (am * 60) + (as || 0);
+            const bSecs = (bh * 3600) + (bm * 60) + (bs || 0);
+            const timeDiff = bSecs - aSecs;
             if (timeDiff !== 0) return timeDiff;
             return b.points - a.points;
         })

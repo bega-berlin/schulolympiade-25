@@ -115,17 +115,17 @@ body {
 }
 .logo-divider {
     display: inline-block;
-    width: 6px;              /* richtig dick */
+    width: 6px;
     height: 54px;
-    background: #fff;         /* einfach weiß */
-    margin: 0 18px;
-    border-radius: 0;         /* keine Abrundung */
+    background: #fff;
+    margin: 0 8px;      /* Weniger Abstand links und rechts */
+    border-radius: 0;
     opacity: 1;
-    box-shadow: none;         /* kein Leuchten */
+    box-shadow: none;
 }
 @media (max-width: 900px) {
     .ong-logo, .bega-logo { height: 38px; }
-    .logo-divider { height: 32px; width: 7px; }
+    .logo-divider { height: 32px; width: 7px; margin: 0 5px; }
 }
 
 /* Navigation */

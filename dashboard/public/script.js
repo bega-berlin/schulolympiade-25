@@ -43,7 +43,7 @@ class OlympiadeDashboard {
 
     updateUI() {
         this.updateStats();
-        this.updateChart();
+        this.updateGradeRankings();
         this.updateLeaderboard();
         this.updateRecentResults();
         this.updateLastUpdateTime();
@@ -62,43 +62,52 @@ class OlympiadeDashboard {
         document.getElementById('avgPoints').textContent = "⌀ " + avgPoints;
     }
 
-    updateChart() {
-        const chartContainer = document.getElementById('barChart');
-        chartContainer.style.display = 'flex';
-        chartContainer.style.flexDirection = 'column';
-        chartContainer.innerHTML = '';
+    updateGradeRankings() {
+        const container = document.getElementById('barChart');
+        container.style.display = 'block';
+        container.innerHTML = '';
 
-        const teams = this.data.leaderboard.slice(0, 10);
-        const maxPoints = Math.max(...teams.map(team => team.totalPoints));
+        const leaderboard = this.data.leaderboard || [];
 
-        teams.forEach((team, index) => {
-            const barItem = document.createElement('div');
-            barItem.className = 'bar-item';
+        const getGrade = team => {
+            if (team.grade) return String(team.grade);
+            if (team.jahrgang) return String(team.jahrgang);
+            const match = team.name && team.name.match(/(\d+)[\.\- ]/);
+            return match ? match[1] : 'Unbekannt';
+        };
 
-            const bar = document.createElement('div');
-            bar.className = 'bar';
+        const allGrades = Array.from(
+            new Set(leaderboard.map(getGrade).filter(g => g !== 'Unbekannt'))
+        ).sort((a, b) => Number(a) - Number(b));
 
-            let widthPercent = 0;
-            if (maxPoints > 0) {
-                widthPercent = Math.pow(team.totalPoints / maxPoints, 2) * 100;
-            }
-            bar.style.width = widthPercent + '%';
+        const lastGrade = localStorage.getItem('currentGrade');
+        let nextIdx = 0;
+        if (lastGrade) {
+            const idx = allGrades.indexOf(lastGrade);
+            nextIdx = idx === -1 || idx === allGrades.length - 1 ? 0 : idx + 1;
+        }
+        const currentGrade = allGrades[nextIdx];
 
-            const value = document.createElement('div');
-            value.className = 'bar-value';
-            value.textContent = team.totalPoints;
+        localStorage.setItem('currentGrade', currentGrade);
 
-            const label = document.createElement('div');
-            label.className = 'bar-label';
-            label.textContent = team.name;
-            label.title = team.name;
+        const teams = leaderboard.filter(team => getGrade(team) == currentGrade)
+            .sort((a, b) => b.totalPoints - a.totalPoints);
 
-            barItem.appendChild(label);
-            barItem.appendChild(bar);
-            barItem.appendChild(value);
-
-            chartContainer.appendChild(barItem);
-        });
+        const gradeBlock = document.createElement('div');
+        gradeBlock.className = 'grade-ranking-block';
+        gradeBlock.innerHTML = `
+            <div class="grade-title">Jahrgang ${currentGrade}</div>
+            <ol class="grade-ranking-list">
+                ${teams.map((team, idx) => `
+                    <li class="grade-ranking-item${idx === 0 ? ' gold' : idx === 1 ? ' silver' : idx === 2 ? ' bronze' : ''}">
+                        <span class="grade-rank-badge">${idx + 1}</span>
+                        <span class="grade-team-name" title="${team.name}">${team.name}</span>
+                        <span class="grade-team-points">${team.totalPoints} Pkt</span>
+                    </li>
+                `).join('')}
+            </ol>
+        `;
+        container.appendChild(gradeBlock);
     }
 
     updateLeaderboard() {
@@ -269,5 +278,3 @@ function capitalizeFirstLetter(str) {
     if (!str) return '';
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
-
-input.value = capitalizeFirstLetter(team.name);

@@ -5,9 +5,11 @@ Dieses Projekt bietet eine moderne, TV-optimierte Übersicht aller Ergebnisse, R
 
 ---
 
-## 🎬 Titel-Video
+## 🎬 Videos
 
 https://github.com/user-attachments/assets/ba063d60-0c84-469e-b994-72d3def3de98
+
+https://github.com/user-attachments/assets/8252144b-8567-4e3a-89b4-0a9d64303f05
 
 ---
 

@@ -1,3 +1,4 @@
+// Reset Point for git -> Last Commit before adding Ranking of Classes
 class OlympiadeDashboard {
     constructor() {
         this.apiBase = '/api';

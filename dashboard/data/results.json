@@ -21,17 +21,52 @@
     "Uhr": "13:45"
   },
   {
-    "Team": "Klasse 11.4",
+    "Team": "Klasse 10.4",
     "Disziplin": "Musik",
     "Punkte": 25,
     "Platz": 3,
     "Uhr": "15:30"
   },
   {
-    "Team": "Klasse 12.5",
+    "Team": "Klasse 10.5",
     "Disziplin": "Mathe",
     "Punkte": 18,
     "Platz": 4,
     "Uhr": "15:10"
+  },
+  {
+    "Team": "Klasse 5.1",
+    "Disziplin": "Sport",
+    "Punkte": 30,
+    "Platz": 2,
+    "Uhr": "12:40"
+  },
+  {
+    "Team": "Klasse 7.3",
+    "Disziplin": "Musik",
+    "Punkte": 33,
+    "Platz": 1,
+    "Uhr": "13:05"
+  },
+  {
+    "Team": "Klasse 9.2",
+    "Disziplin": "Kunst",
+    "Punkte": 22,
+    "Platz": 4,
+    "Uhr": "14:50"
+  },
+  {
+    "Team": "Klasse 8.1",
+    "Disziplin": "Mathe",
+    "Punkte": 36,
+    "Platz": 1,
+    "Uhr": "11:30"
+  },
+  {
+    "Team": "Klasse 5.2",
+    "Disziplin": "Kunst",
+    "Punkte": 27,
+    "Platz": 2,
+    "Uhr": "12:15"
   }
 ]

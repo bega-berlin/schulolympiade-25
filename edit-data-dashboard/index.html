@@ -99,7 +99,8 @@
                         <input type="number" id="editPlatz" class="form-input" placeholder="Platz" required>
                     </div>
                     <div class="form-group form-group-full">
-                        <input type="time" id="editUhr" class="form-input" required>
+                        <input id="editUhr" name="editUhr" type="text" required
+                            pattern="^([01]?\d|2[0-3]):[0-5]\d(:[0-5]\d)?$" placeholder="z.B. 09:51:01">
                     </div>
                 </div>
 

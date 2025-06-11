@@ -1,72 +1,30 @@
 [
   {
     "Team": "Klasse 6.1",
-    "Disziplin": "Mathe",
-    "Punkte": 20,
-    "Platz": 3,
-    "Uhr": "15:03"
-  },
-  {
-    "Team": "Klasse 6.2",
-    "Disziplin": "Sport",
-    "Punkte": 35,
+    "Disziplin": "Worttüftelei",
+    "Punkte": 11,
     "Platz": 1,
-    "Uhr": "14:15"
+    "Uhr": "17:58:59"
   },
   {
-    "Team": "Klasse 8.3",
-    "Disziplin": "Kunst",
-    "Punkte": 28,
-    "Platz": 2,
-    "Uhr": "13:45"
-  },
-  {
-    "Team": "Klasse 10.4",
-    "Disziplin": "Musik",
-    "Punkte": 25,
-    "Platz": 3,
-    "Uhr": "15:30"
-  },
-  {
-    "Team": "Klasse 10.5",
-    "Disziplin": "Mathe",
-    "Punkte": 18,
-    "Platz": 4,
-    "Uhr": "15:10"
-  },
-  {
-    "Team": "Klasse 5.1",
-    "Disziplin": "Sport",
-    "Punkte": 30,
-    "Platz": 2,
-    "Uhr": "12:40"
-  },
-  {
-    "Team": "Klasse 7.3",
-    "Disziplin": "Musik",
-    "Punkte": 33,
+    "Team": "Klasse 7.1",
+    "Disziplin": "Kopfrechnen",
+    "Punkte": 11,
     "Platz": 1,
-    "Uhr": "13:05"
+    "Uhr": "10:51:46"
   },
   {
-    "Team": "Klasse 9.2",
-    "Disziplin": "Kunst",
-    "Punkte": 22,
-    "Platz": 4,
-    "Uhr": "14:50"
-  },
-  {
-    "Team": "Klasse 8.1",
-    "Disziplin": "Mathe",
-    "Punkte": 36,
+    "Team": "Klasse 6.1",
+    "Disziplin": "Worttüftelei",
+    "Punkte": 15,
     "Platz": 1,
-    "Uhr": "11:30"
+    "Uhr": "10:59:05"
   },
   {
-    "Team": "Klasse 5.2",
-    "Disziplin": "Kunst",
-    "Punkte": 27,
-    "Platz": 2,
-    "Uhr": "12:15"
+    "Team": "Klasse 8.2",
+    "Disziplin": "Marshmallow Challenge",
+    "Punkte": 11,
+    "Platz": 1,
+    "Uhr": "10:59:14"
   }
 ]

@@ -115,7 +115,7 @@ body {
 }
 .logo-divider {
     display: inline-block;
-    width: 12px;              /* richtig dick */
+    width: 6px;              /* richtig dick */
     height: 54px;
     background: #fff;         /* einfach weiß */
     margin: 0 18px;

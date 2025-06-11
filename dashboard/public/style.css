@@ -99,32 +99,33 @@ body {
 .logo-combo {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 18px;
 }
 .ong-logo {
-    height: 54px;
+    height: 60px;
     width: auto;
     display: block;
     background: none;
 }
 .bega-logo {
-    height: 48px;
+    height: 54px;
     width: auto;
     display: block;
     background: none;
 }
 .logo-divider {
     display: inline-block;
-    width: 2px;
-    height: 40px;
-    background: linear-gradient(180deg, #fff 60%, #bbb 100%);
-    margin: 0 10px;
-    border-radius: 2px;
-    opacity: 0.7;
+    width: 6px; /* deutlich dicker */
+    height: 48px;
+    background: linear-gradient(180deg, #fff 70%, #bbb 100%);
+    margin: 0 16px;
+    border-radius: 4px;
+    opacity: 0.95;
+    box-shadow: 0 0 6px #fff, 0 0 2px #bbb;
 }
 @media (max-width: 900px) {
-    .ong-logo, .bega-logo { height: 36px; }
-    .logo-divider { height: 28px; }
+    .ong-logo, .bega-logo { height: 38px; }
+    .logo-divider { height: 28px; width: 4px; }
 }
 
 /* Navigation */

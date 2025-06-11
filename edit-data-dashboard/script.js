@@ -40,6 +40,7 @@ class DataManager {
                     typeof item.Platz !== 'number' || !item.Uhr) {
                     throw new Error('Ungültige Datenstruktur in JSON');
                 }
+                // Keine Prüfung auf Uhrzeit-Format mehr!
             }
             this.data = jsonData;
             console.log(`✅ ${jsonData.length} Einträge aus ${this.dataFile} geladen`);

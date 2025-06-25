@@ -182,3 +182,7 @@
 [2025-06-14T11:57:12.198Z] 100.78.124.88 - GET /favicon.ico - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:139.0) Gecko/20100101 Firefox/139.0
 [2025-06-14T12:07:30.186Z] 100.78.124.88 - GET /style.css - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:139.0) Gecko/20100101 Firefox/139.0
 [2025-06-14T12:07:31.278Z] 100.78.124.88 - GET /style.css - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:139.0) Gecko/20100101 Firefox/139.0
+[2025-06-18T09:22:32.876Z] 10.12.0.33 - GET /favicon.ico - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+[2025-06-25T07:04:28.436Z] 192.168.100.27 - GET /apple-touch-icon-precomposed.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-25T07:04:28.541Z] 192.168.100.27 - GET /apple-touch-icon.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-06-25T12:43:49.074Z] 10.12.0.33 - GET /dashboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36

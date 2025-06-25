@@ -1,2 +1,16 @@
 [
+  {
+    "Team": "Klasse 7.2",
+    "Disziplin": "Wer ist das?",
+    "Punkte": 10,
+    "Platz": 2,
+    "Uhr": "18:10:45"
+  },
+  {
+    "Team": "Klasse 8.4",
+    "Disziplin": "Worttüftelei",
+    "Punkte": 40,
+    "Platz": 1,
+    "Uhr": "18:10:56"
+  }
 ]
